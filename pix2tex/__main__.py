@@ -22,9 +22,9 @@ def main():
 
     name = os.path.split(sys.argv[0])[-1]
     if arguments.gui or name in ['pix2tex_gui', 'latexocr']:
-        from .gui import main
+        from gui import main
     else:
-        from .cli import main
+        from cli import main
     main(arguments)
 
 
