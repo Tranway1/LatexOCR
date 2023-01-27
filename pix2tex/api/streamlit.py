@@ -3,9 +3,10 @@ from PIL import Image
 import streamlit
 
 if __name__ == '__main__':
-    streamlit.set_page_config(page_title='LaTeX-OCR')
-    streamlit.title('LaTeX OCR')
-    streamlit.markdown('Convert images of equations to corresponding LaTeX code.\n\nThis is based on the `pix2tex` module. Check it out [![github](https://img.shields.io/badge/LaTeX--OCR-visit-a?style=social&logo=github)](https://github.com/lukas-blecher/LaTeX-OCR)')
+    streamlit.set_page_config(page_title='Image2LaTex')
+    streamlit.title('ASKEM Image to LaTeX Tool')
+    streamlit.markdown(
+        'Convert images of equations to corresponding LaTeX code.\n\nThis is based on the `pix2tex` module. Please contact the MIT team if there are any problems.')
 
     uploaded_file = streamlit.file_uploader(
         'Upload an image an equation',
